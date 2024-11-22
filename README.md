@@ -1,4 +1,4 @@
-Este projeto implementa um sistema de semáforo inteligente baseado em um ESP32, capaz de ajustar o tempo de funcionamento conforme as condições de luminosidade do ambiente. O sistema também integra conectividade IoT para monitoramento remoto utilizando a plataforma Ubidots via MQTT.
+Este projeto implementa um sistema de semáforo inteligente baseado em um ESP32, capaz de ajustar o tempo de funcionamento conforme as condições de luminosidade do ambiente. O sistema também integra conectividade IoT para monitoramento remoto, utilizando a plataforma Ubidots via MQTT.
 
 ## Componentes Utilizados
 - ESP32 (microcontrolador)
@@ -9,5 +9,8 @@ Este projeto implementa um sistema de semáforo inteligente baseado em um ESP32,
 ## Video demonstração: https://youtube.com/shorts/IYg-D8m0neM
 
 #### Descrição do funcionamento:
-Dois esps32 estão conectados em uma protoboard, ambos tem 3 leds, das cores vermelho, amarelo e verde. um esp32 tem um sensor ldr conectado para verificar a luminosidade ambiente e enviar, por meio de um protocolo MQTT, para a platafrma ubidots. Dentro da plataforma, no dashboard, é possivel verificar se está dia ou noite e tomar a decisão de encurtar o tempo dos ciclos dos semaforos. Alem disso o broker é utilizado para relaizar a sincronização entre os semáforos, mas caso de errado um dos semaforos fica piscando o led amarelo.
-No momento da entrega não é possivel ver o segundo semaforo funcionando, pois estamos com problema no ubidots.
+Dois ESP32 estão conectados em uma protoboard, ambos com três LEDs nas cores vermelho, amarelo e verde. Um dos ESP32 possui um sensor LDR conectado para verificar a luminosidade ambiente e enviar os dados, por meio do protocolo MQTT, para a plataforma Ubidots.
+
+Na plataforma, através de um painel de controle (dashboard), é possível verificar se está dia ou noite e tomar a decisão de encurtar o tempo dos ciclos dos semáforos. Além disso, o broker é utilizado para realizar a sincronização entre os semáforos. Caso ocorra algum problema na comunicação, um dos semáforos entra em modo de segurança, ficando com o LED amarelo piscando.
+
+No momento da entrega, não foi possível demonstrar o segundo semáforo em funcionamento, devido a um problema na integração com a plataforma Ubidots.
