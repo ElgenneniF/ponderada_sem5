@@ -13,8 +13,8 @@ int estadoSemaforo = 0;
 int tempoBase;
 bool modoNoturno = false;
 
-const char* SSID = "SHARE-RESIDENTE";
-const char* PASSWORD = "Share@residente23";
+const char* SSID = "";
+const char* PASSWORD = "";
 
 const char* MQTT_SERVER = "industrial.api.ubidots.com";
 const char* MQTT_CLIENT_ID = "esp32_t12_g02_1";
