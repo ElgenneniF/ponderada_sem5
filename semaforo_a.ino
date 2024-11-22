@@ -18,7 +18,7 @@ const char* PASSWORD = "";
 
 const char* MQTT_SERVER = "industrial.api.ubidots.com";
 const char* MQTT_CLIENT_ID = "esp32_t12_g02_1";
-const char* MQTT_USER = "BBUS-QO9k65Ha5kiIEWMMYADwHXxW6zcljy";
+const char* MQTT_USER = "";
 const char* MQTT_PASSWORD = "";
 const char* TOPIC_MODO = "/v1.6/devices/esp32_t12_g02_1/modo";
 const char* TOPIC_ESTADO = "/v1.6/devices/esp32_t12_g02_1/estado";
